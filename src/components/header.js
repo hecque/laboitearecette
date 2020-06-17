@@ -1,0 +1,14 @@
+import React from 'react';
+
+const header = ({ pseudo }) => {
+
+    const formatPseudo = pseudo => /[aeiouy]/i.test(pseudo[0]) ? `d'${ pseudo }` : `de ${ pseudo }`;
+
+    return (
+        <header>
+            <h1>La boîte à recettes { formatPseudo(pseudo) }</h1>
+        </header>
+    )
+}
+
+export default header;
