@@ -3,13 +3,13 @@ import firebase from 'firebase';
 import 'firebase/database'
 
 const firebaseConf = firebase.initializeApp ( {
-        apiKey: "AIzaSyAGzjwOfaXA5R4u1-fWuRY-FeMoUCKUsOk",
-        authDomain: "la-boite-a-recettes.firebaseapp.com",
-        databaseURL: "https://la-boite-a-recettes.firebaseio.com",
-        projectId: "la-boite-a-recettes",
-        storageBucket: "la-boite-a-recettes.appspot.com",
-        messagingSenderId: "468320744072",
-        appId: "1:468320744072:web:e476a0c4ed4b1306b3253d"
+        apiKey: "AIzaSyCGVvOSZsEIvGvbgxX54U1U3j-IPiMlY88",
+        authDomain: "la-boite-recettes.firebaseapp.com",
+        databaseURL: "https://la-boite-recettes.firebaseio.com",
+        projectId: "la-boite-recettes",
+        storageBucket: "la-boite-recettes.appspot.com",
+        messagingSenderId: "685125016732",
+        appId: "1:685125016732:web:3fe6ec80e19e857bf62159"
 })
 
 const base = Rebase.createClass(firebaseConf.database())
