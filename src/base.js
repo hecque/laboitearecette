@@ -3,7 +3,7 @@ import firebase from 'firebase';
 import 'firebase/database'
 
 const firebaseConf = firebase.initializeApp ( {
-        apiKey: //private,
+        apiKey: "AIzaSyCGVvOSZsEIvGvbgxX54U1U3j-IPiMlY88",
         authDomain: "la-boite-recettes.firebaseapp.com",
         databaseURL: "https://la-boite-recettes.firebaseio.com",
         projectId: "la-boite-recettes",

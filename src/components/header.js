@@ -1,6 +1,6 @@
 import React from 'react';
 
-const header = ({ pseudo }) => {
+const Header = ({ pseudo }) => {
 
     const formatPseudo = pseudo => /[aeiouy]/i.test(pseudo[0]) ? `d'${ pseudo }` : `de ${ pseudo }`;
 
@@ -11,4 +11,4 @@ const header = ({ pseudo }) => {
     )
 }
 
-export default header;
+export default Header;

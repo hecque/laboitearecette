@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import Header from './components/header'
+import Header from './components/Header'
 import recettes from './recettes'
 import Admin from './components/Admin'
 import Card from './components/Card'
@@ -46,7 +46,7 @@ class App extends Component {
 
   render() {
     const cards = Object.keys(this.state.recettes)
-      .map(key => <Card key = { key } details = { this.state.recettes[key]}></Card>)
+      .map(key => <Card key = { key } details = { this.state.recettes[key]} />)
 
     return (
       <div className = 'box'>
@@ -57,6 +57,7 @@ class App extends Component {
           </div>
         </div>
         <Admin
+          pseudo = { this.state.pseudo }
           recettes = { this.state.recettes }
           majRecette = { this.majRecette }
           supprimerRecette = { this.supprimerRecette }
